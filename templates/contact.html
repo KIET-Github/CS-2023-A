@@ -1,0 +1,41 @@
+{% extends 'common/base.html' %} {% load static %} {% block title %}
+<!---->
+{% load crispy_forms_tags %}
+<title>Contact Us</title>
+{% endblock title %}
+<!---->
+{% block content %}
+<div class="jumbotron">
+  <!--SECTION 1-->
+  <div class="section1 mt-5">
+    <ul class="list-unstyled mb-0 mt-5 my-5">
+      <li>
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+        <p>KIET Group Of Institutions,Ghaziabad,
+          U.P.-201206, India</p>
+      </li>
+
+      <li>
+        <i class="fas fa-phone mt-4 fa-2x"></i>
+        <p>+91 775 58 30 478</p>
+      </li>
+
+      <li>
+        <i class="fas fa-envelope mt-4 fa-2x"></i>
+        <p>work.anoop.webd1405@gmail.com</p>
+      </li>
+    </ul>
+  </div>
+  <!--SECTION 2-->
+  <div class="section2">
+    <h3 class="form-head">Any Query?</h3>
+    <form method="POST" action="">
+      <!---->
+      {% csrf_token %}
+      <!---->
+      {{ form|crispy }}
+      <input type="submit" value="submit" class="btn btn-primary mt-2" />
+    </form>
+  </div>
+</div>
+{% endblock content %}

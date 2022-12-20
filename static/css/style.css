@@ -1,0 +1,293 @@
+.mycontainer {
+  width: 80%;
+  margin: auto;
+  padding: 120px;
+  margin-top: 80px;
+  box-shadow: 10px 10px 10px 10px grey;
+  background-color: #34568b;
+}
+.content > h3 {
+  color: gray;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: underline;
+  padding: 10px;
+}
+body {
+  background-color: #939597;
+}
+.mycontainer2 {
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+  margin-top: 100px;
+  box-shadow: 10px 10px 10px 10px wheat;
+  background-color: yellow;
+}
+
+.button1 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  background: #4e9caf;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  margin-left: 220px;
+}
+
+.button2 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  background: #4e9caf;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  margin-left: 10px;
+}
+
+.button3 {
+  display: block;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  background: #4e9caf;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  margin-right: 220px;
+}
+a:hover {
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #41c2d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #70f5ff 100%
+  );
+
+  align-content: center;
+  min-height: 100vh;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 70vh;
+  width: 75vw;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 12px;
+}
+.image {
+  background-color: #12192c;
+  display: flex;
+  border-radius: 12px 0 0 12px;
+}
+.image img {
+  height: 50vh;
+  margin: 50px auto;
+}
+.content {
+  background-color: #12192c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 12px 12px 0;
+  color: #fff;
+}
+.content h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 6px;
+  opacity: 0.9;
+}
+.content span {
+  height: 0.5px;
+  width: 80px;
+  background: #777;
+  margin: 30px 0;
+}
+.content p {
+  padding-bottom: 15px;
+  font-weight: 300;
+  opacity: 0.7;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #ffffff;
+}
+.links {
+  margin: 15px 0;
+}
+.links li {
+  border: 2px solid #4158d0;
+  list-style: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 160px;
+  text-align: center;
+}
+.links li a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+.links li:hover {
+  border-color: #c850c0;
+}
+
+.vertical-line {
+  height: 30px;
+  width: 3px;
+  background: #c850c0;
+  margin: 0 auto;
+}
+.icons {
+  display: flex;
+  padding: 15px 0;
+}
+.icons li {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+}
+.icons li i {
+  font-size: 26px;
+  opacity: 0.8;
+}
+.icons li i:hover {
+  color: #c850c0;
+  cursor: pointer;
+}
+
+/*****************/
+
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: 1fr;
+    width: 100%;
+    border-radius: none;
+  }
+  .image {
+    height: 100vh;
+    border-radius: none;
+  }
+  .content {
+    height: 100vh;
+    border-radius: none;
+  }
+  .content h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  .content span {
+    margin: 20px 0;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .links li a {
+    font-size: 14px;
+  }
+  .links {
+    margin: 5px 0;
+  }
+  .links li {
+    padding: 6px 10px;
+  }
+  .icons li i {
+    font-size: 15px;
+  }
+}
+.credit {
+  text-align: center;
+  color: #000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.credit a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #12192c;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1 {
+  width: 49vw;
+  float: left;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.section2 {
+  width: 49vw;
+  float: left;
+  margin: 10;
+  padding: 10;
+  margin-top: 20px;
+}
+.form-head {
+  border-left: navy solid 20px;
+  padding: 10px;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.img {
+  width: 49vw;
+
+  text-align: center;
+}

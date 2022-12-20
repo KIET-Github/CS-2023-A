@@ -1,0 +1,47 @@
+{% extends 'common/base.html' %} {% load static %} {% block content %}
+
+<div class="">
+  <div class="content">
+    <h3>Compare Excel Sheets</h3>
+    <ol>
+      <li>Select and upload the two excel sheets you want to compare.</li>
+      <li>Click on the Compare button.</li>
+
+      <li>
+        It will show you result on particular sheet. where is the difference
+        between the two sheets.
+      </li>
+    </ol>
+  </div>
+  <div class="mycontainer">
+    <form method="post" enctype="multipart/form-data" action="">
+      {% csrf_token %}
+      <div>
+        <input
+          class="form-control form-control-lg m-2"
+          id="myfile1"
+          type="file"
+          name="myfile1"
+        />
+      </div>
+      <div>
+        <input
+          class="form-control form-control-lg m-2"
+          id="myfile2"
+          type="file"
+          name="myfile2"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-primary btn-lg mt-2"
+        style="box-shadow: 5px 5px 5px #7299e9"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+{% endblock content %}

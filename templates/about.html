@@ -1,0 +1,52 @@
+{% extends 'common/base.html' %} {% load static %} {% block title %}
+<title>About Us</title>
+{% endblock title %} {% block content %}
+
+<section class="mt-2">
+  <div class="image">
+    <img
+      src="https://cdn.pixabay.com/photo/2017/08/26/23/37/business-2684758__340.png"
+    />
+  </div>
+
+  <div class="content">
+    <h2>About Us</h2>
+    <span><!-- line here --></span>
+    <p>
+      As coming from an ISC board background I have started coding in Java since class 9th
+       and after Clearing my 12th standard I have taken admission in B.tech in 
+       KIET Group of Institutions, Ghaziabad in Branch Computer science Where 
+       I started learning New technical Skills and got interested in web 
+       development and started working on Full Stack Development and 
+       learned Python and Django to build this Project during My 5th semester. 
+    </p>
+    <ul class="links">
+      <li><a href="#">work</a></li>
+      <div class="vertical-line"></div>
+      <li><a href="#">service</a></li>
+      <div class="vertical-line"></div>
+      <li><a href="#">contact</a></li>
+    </ul>
+    <ul class="icons">
+      <li>
+        <i class="fa fa-twitter"></i>
+      </li>
+      <li>
+        <i class="fa fa-facebook"></i>
+      </li>
+      <li>
+        <i class="fa fa-github"></i>
+      </li>
+      <li>
+        <i class="fa fa-pinterest"></i>
+      </li>
+    </ul>
+  </div>
+</section>
+<br /><br />
+<div class="credit">
+  Made with <span style="color: tomato">❤</span> by
+  <a href="{% url 'about' %}">Anoop Kumar</a>
+</div>
+
+{% endblock content %}

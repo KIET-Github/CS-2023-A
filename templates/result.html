@@ -1,0 +1,66 @@
+{% extends 'common/base.html' %}
+<!---->
+
+{% load static %}
+<!---->
+{% block content %}
+<div>
+  <div class="mycontainer">
+    <table class="table table-striped" style="padding-left: 10%">
+      <thead>
+        <tr>
+          <th
+            scope="col"
+            style="font-size: large; padding-right: 35%; padding-left: 10%"
+          >
+            Scanned Image
+          </th>
+          <th
+            scope="col"
+            style="font-size: large; padding-right: 35%; padding-left: 10%"
+          >
+            Uploaded Image
+          </th>
+          <th scope="col" style="font-size: large">Similarity Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {% with 'media/'|add:file as file1_path %}
+            <img
+              src="{% static file1_path %} "
+              width="150"
+              height="100"
+              alt=""
+              srcset=""
+            />
+          </td>
+          {% endwith %}
+          <td>
+            {% with 'media/'|add:file as file1_path %}
+            <img
+              src="{% static file1_path %} "
+              width="150"
+              height="100"
+              alt=""
+              srcset=""
+            />
+          </td>
+          {% endwith %}
+          <td style="padding: 2em 1.5em" class="pl-3">
+            <h2><b>{{a}}</b></h2>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="d-flex flex-row-reverse mt-2">
+      <a href="{% url 'home' %}" class="button1">Back To Home</a>
+
+      <a href="{% static fp %}" class="button2" download>Download</a>
+      <a href="{% url 'compare' %}" class="button3">Compare Excel</a>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
