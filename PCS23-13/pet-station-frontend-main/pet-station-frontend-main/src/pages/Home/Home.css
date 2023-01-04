@@ -1,0 +1,22 @@
+.homePage__left__content__button {
+	border-radius: 15px;
+	height: 60px;
+	width: 200px;
+	color: #f0fafa;
+	font-size: 24px;
+	font-style: bold;
+	background: linear-gradient(to right, #09c6f9, #045de9);
+}
+
+.homePage__features {
+	width: 80vw;
+	background: linear-gradient(to right, #09c6f9, #045de9);
+	border-radius: 15px;
+	transform: translateY(100px);
+}
+
+.homePage__footer {
+	height: 70vh;
+	color: #f0fafa;
+	background: linear-gradient(to bottom, #0f0f0f, #000000);
+}
