@@ -1,0 +1,31 @@
+{% extends 'common/base.html' %}
+<!---->
+
+{% load static %}
+<!---->
+{% block content %}
+<div>
+  <table class="table mt-5 table-striped table-hover text-center">
+    <thead>
+      <tr class="table-danger">
+        <th scope="col">unmatched data</th>
+        <th scope="col">unmatch data</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for x in comp %}
+      <tr>
+        <th scope="row">{{ forloop.counter }}</th>
+        <th scope="row">{{x}}</th>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="text-center">
+    <a href="{% static fm %}" class="btn btn-dark btn-lg" download
+      >Download Compared file</a
+    >
+  </p>
+</div>
+
+{% endblock content %}

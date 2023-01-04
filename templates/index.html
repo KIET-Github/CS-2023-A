@@ -1,0 +1,50 @@
+{% extends 'common/base.html' %} {% load static %} {% block content %}
+
+<div class="outer">
+  <div class="content">
+    <h3>Extract image data into excel</h3>
+    <ol>
+      <li>
+        JPG to EXCEL You can easily convert your JPG files to EXCEL with this
+        online tool. Furthermore, the Online Excel Converter offers many more
+        features. Just select the files, which you want to merge, edit, unlock
+        or convert. Supported formats Depending on your files you can set many
+        options (most of them can be combined!)
+      </li>
+      <li>
+        You can select particular pages, rotate Jpg images, reorder images,
+        split files and much more (just have a look at the buttons right of the
+        selected file)
+      </li>
+      <li>
+        A Excel protection for printing, copying and editing is removed
+        automatically (without password). - Many other options can be defined,
+        like header/footer, layout and compression. Finally, please click on
+        'Convert'. Do you need help? Documentation of all features
+      </li>
+    </ol>
+  </div>
+  <div class="mycontainer">
+    <form method="post" enctype="multipart/form-data" action="">
+      {% csrf_token %}
+      <div>
+        <input
+          class="form-control form-control-lg"
+          id="myfile"
+          type="file"
+          name="myfile"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-primary btn-lg mt-2"
+        style="box-shadow: 5px 5px 5px #7299e9"
+      >
+        Convert
+      </button>
+    </form>
+  </div>
+</div>
+
+{% endblock content %}
