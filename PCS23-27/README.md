@@ -21,7 +21,7 @@ In project root, run `docker-compose up`
 <br/>
 
 - The [Site](https://code-rush.vercel.app/) is blazing fast⚡ 
-> Believe Me! Try it yourself [CodeRush](https://code-rush.vercel.app)👈
+> Believe Me! Try it yourself [Code-Kiet](https://code-rush.vercel.app)👈
 
 <h3>All Pages are pre-rendered</h3>
 
