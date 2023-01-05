@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Traffic Ease</string>
+    <string name="welcome_to_easy_traffic">Welcome to Easy Traffic!</string>
+    <string name="request_otp">Request OTP</string>
+    <string name="password">password</string>
+    <string name="login_tab">LogIn</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="title_activity_report">Traffic Report</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>
